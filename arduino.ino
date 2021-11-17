@@ -21,7 +21,7 @@ void setup() {
 int hasPlayed = 0;
 
 void loop() {
-    if (getButtonStatus(pinButton) == 1) {
+  if (getButtonStatus(pinButton) == 1) {
     digitalWrite(pinLED, HIGH);
     // If the tune hasn't played already, play it.
     if (hasPlayed == 0)
@@ -57,6 +57,7 @@ void playDoorbellTune() {
   digitalWrite(pinLED2, HIGH);
   tone(pinSpeaker, NOTE_E5);
   delay(500);
+  //
   tone(pinSpeaker, NOTE_G5);
   delay(250);
   tone(pinSpeaker, NOTE_C5);
