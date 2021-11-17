@@ -21,16 +21,7 @@ void setup() {
 int hasPlayed = 0;
 
 void loop() {
-  switch (getButtonStatus(pinButton)) {
-    case 1:
-      digitalWrite(pinLED3, HIGH);
-      break;
-
-    default:
-      digitalWrite(pinLED3, LOW);
-      break;
-  }
-  if (getButtonStatus(pinButton) == 1) {
+    if (getButtonStatus(pinButton) == 1) {
     digitalWrite(pinLED, HIGH);
     // If the tune hasn't played already, play it.
     if (hasPlayed == 0)
